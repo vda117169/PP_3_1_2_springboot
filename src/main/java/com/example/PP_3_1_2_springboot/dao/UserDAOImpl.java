@@ -42,4 +42,9 @@ public class UserDAOImpl implements UserDAO{
     public User getIdUser(int id) {
         return entityManager.find(User.class, id);
     }
+
+    @Override
+    public User getUserById(int id) {
+        return entityManager.find(User.class, id);
+    }
 }

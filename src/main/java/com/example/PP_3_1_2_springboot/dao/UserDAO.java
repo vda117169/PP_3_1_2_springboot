@@ -14,4 +14,6 @@ public interface UserDAO {
     void updateUser(User user);//изменить юзеров
 
     User getIdUser(int id);//получить по id юзеров
+
+    User getUserById(int id);
 }

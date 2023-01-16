@@ -21,8 +21,8 @@ public class User implements Serializable {
     @Column(name = "name")
     private String  name;
 
-    @Column(name = "lastname")
-    private String lastname;
+    @Column(name = "lastName")
+    private String lastName;
 
     @Column(name = "age")
     private int age;
@@ -39,9 +39,9 @@ public class User implements Serializable {
 
     public User() {}
 
-    public User(String name, String lastname, int age, String email, String password, String roles) {
+    public User(String name, String lastName, int age, String email, String password, String roles) {
         this.name = name;
-        this.lastname = lastname;
+        this.lastName = lastName;
         this.age = age;
         this.email = email;
         this.password =password;
@@ -64,12 +64,12 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getAge() {
